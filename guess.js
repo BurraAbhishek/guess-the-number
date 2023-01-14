@@ -4,12 +4,12 @@ function guessValue() {
     if (userValue > document.getElementById("user-guess").max) {
         throw new Error(
             "Please enter an integer less than " +
-                String(document.getElementById("user-guess").max + 1)
+                String(Number(document.getElementById("user-guess").max) + 1)
         );
     } else if (userValue < document.getElementById("user-guess").min) {
         throw new Error(
             "Please enter an integer greater than " +
-                String(document.getElementById("user-guess").min - 1)
+                String(Number(document.getElementById("user-guess").min) - 1)
         );
     } else {
         sendMessage(userValue);
