@@ -1,0 +1,120 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    background: #161512 linear-gradient(to bottom, #2e2a24, #161512 116px)
+        no-repeat;
+    color: #a9a9a9;
+}
+
+a {
+    color: #028dff;
+    text-decoration: none;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 85vh;
+}
+
+.submit-button,
+.user-list {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    border: none;
+    background-color: #028dff;
+    color: white;
+    padding: 2% 2%;
+    width: 98%;
+}
+
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #2e2a24;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    width: fit-content;
+}
+
+.login-form th {
+    text-align: right;
+    padding: 4% 0;
+}
+
+.login-form label {
+    margin-right: 2vw;
+}
+
+.login-form input,
+.submit-button {
+    font-size: 1.3rem;
+}
+
+.fullwidth {
+    display: block;
+    width: 96vw;
+}
+
+.sent-message-background {
+    display: flex;
+    width: 96vw;
+    justify-content: right;
+}
+
+.sent-message {
+    background-color: #2f6921;
+    color: whitesmoke;
+    padding: 1% 1%;
+    margin: 1% 1%;
+    font-size: 1.35em;
+    min-width: 12vw;
+    width: fit-content;
+    box-shadow: 0 1px 0.5px black;
+    border-radius: 6px;
+}
+
+.received-message-background {
+    display: flex;
+    width: 96vw;
+    justify-content: left;
+}
+
+.received-message {
+    background-color: #3d3220;
+    color: whitesmoke;
+    padding: 1% 1%;
+    margin: 1% 1%;
+    font-size: 1.35em;
+    width: fit-content;
+    box-shadow: 0 1px 0.5px black;
+    border-radius: 6px;
+}
+
+.congratulations-text {
+    padding-top: 4%;
+    text-align: center;
+}
+
+#game-messages {
+    height: 75vh;
+    overflow: scroll;
+}
+
+#player-score {
+    font-weight: bold;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <meta name="theme-color" content="#2e2a24" />
+        <title>Guess the number</title>
+        <script src="startgame.js"></script>
+        <script src="message.js"></script>
+        <script src="guess.js"></script>
+        <script src="endgame.js"></script>
+        <link rel="stylesheet" href="index.css" />
+        <style>
+            h1,
+            h2 {
+                text-decoration: underline;
+            }
+            #main-content {
+                display: block;
+                padding: 1% 1%;
+                font-size: 1.25rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-content">
+            <h1>About this game</h1>
+            <p>
+                Guess an integer from 'm' to 'n' (both included). Make your
+                guess in as few attempts to score higher. Possible scores are
+                integers from 1 to 1023 if your guess is successful, and 0 if
+                you run out of attempts.
+            </p>
+            <h2>Limits</h2>
+            <ul>
+                <li>
+                    The difference between the two numbers must be less than or
+                    equal to (2 ^ 1023).
+                </li>
+                <li>Minimum 1 attempt is required.</li>
+                <li>
+                    Do not enter numbers as powers, for example, 10 ^ 5 or 10 **
+                    5
+                </li>
+            </ul>
+            <h2>Is this gambling?</h2>
+            <p>
+                Although this is a game of chance, we do not and will never ask
+                for any money, bet or wager to play this game.
+            </p>
+            <h1>Source Code</h1>
+            <p>
+                The source code is available at
+                <a href="https://github.com/BurraAbhishek/guess-the-number">
+                    https://github.com/BurraAbhishek/guess-the-number
+                </a>
+            </p>
+        </div>
+    </body>
+</html>

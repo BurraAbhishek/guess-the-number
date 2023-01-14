@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <meta name="theme-color" content="#2e2a24" />
+        <title>Guess the number</title>
+        <script src="startgame.js"></script>
+        <script src="message.js"></script>
+        <script src="guess.js"></script>
+        <script src="endgame.js"></script>
+        <link rel="stylesheet" href="index.css" />
+        <style>
+            #page-2,
+            #page-3 {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-content">
+            <div id="page-1" class="main-wrap">
+                <table class="login-form">
+                    <tr>
+                        <th>
+                            <label for="guess-from"> Minimum </label>
+                        </th>
+                        <td>
+                            <input
+                                name="guess-from"
+                                id="guess-from"
+                                type="number"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="guess-to"> Maximum </label>
+                        </th>
+                        <td>
+                            <input
+                                name="guess-to"
+                                id="guess-to"
+                                type="number"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="max-attempts"> Attempts </label>
+                        </th>
+                        <td>
+                            <input
+                                name="max-attempts"
+                                id="max-attempts"
+                                type="number"
+                                min="1"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button
+                                class="submit-button"
+                                onclick="javascript:startGame();"
+                            >
+                                Start Game
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button
+                                class="submit-button"
+                                onclick="javascript:aboutGame();"
+                            >
+                                About Game
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="page-2" class="main-wrap">
+                <div id="game-messages" class="fullwidth"></div>
+                <br />
+                <div class="login-form">
+                    <table>
+                        <tr>
+                            <th>
+                                <label for="user-guess">Your response:</label>
+                            </th>
+                            <td>
+                                <input
+                                    type="number"
+                                    name="user-guess"
+                                    id="user-guess"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button
+                                    class="submit-button"
+                                    onclick="javascript:guessValue();"
+                                >
+                                    GUESS
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="page-3" class="main-wrap">
+                <div class="login-form">
+                    <div class="congratulations-text">
+                        Congratulations, your score is:
+                        <br />
+                        <br />
+                        <span id="player-score">0</span>
+                        <span id="analysis-correct-answer"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
