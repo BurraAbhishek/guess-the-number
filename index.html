@@ -86,31 +86,35 @@
             <div id="page-2" class="main-wrap">
                 <div id="game-messages" class="fullwidth"></div>
                 <br />
-                <div class="login-form">
-                    <table>
-                        <tr>
-                            <th>
-                                <label for="user-guess">Your response:</label>
-                            </th>
-                            <td>
-                                <input
-                                    type="number"
-                                    name="user-guess"
-                                    id="user-guess"
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <button
-                                    class="submit-button"
-                                    onclick="javascript:guessValue();"
-                                >
-                                    GUESS
-                                </button>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="login-form" id="game-user-input">
+                    <div class="login-form">
+                        <table>
+                            <tr>
+                                <th>
+                                    <label for="user-guess"
+                                        >Your response:</label
+                                    >
+                                </th>
+                                <td>
+                                    <input
+                                        type="number"
+                                        name="user-guess"
+                                        id="user-guess"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button
+                                        class="submit-button"
+                                        onclick="javascript:guessValue();"
+                                    >
+                                        GUESS
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div id="page-3" class="main-wrap">
