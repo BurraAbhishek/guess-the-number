@@ -35,3 +35,7 @@ function generateCorrectValue(min, max) {
 function aboutGame() {
     window.location.href = "help.html";
 }
+
+function restartGame() {
+    window.location.reload();
+}

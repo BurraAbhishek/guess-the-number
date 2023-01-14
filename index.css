@@ -49,6 +49,7 @@ a {
     padding-right: 2%;
     padding-bottom: 3%;
     width: fit-content;
+    max-width: 98vw;
 }
 
 .login-form th {
